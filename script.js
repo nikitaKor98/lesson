@@ -9,7 +9,10 @@ const personalMovieDB = {
 
 const oneAsk = prompt("Один из последних просмотренных фильмов?", "");
 const twoAsk = prompt("Насколько оцените его?", "");
+const threeAsk = prompt("Один из последних просмотренных фильмов?", "");
+const foureAsk = prompt("Насколько оцените его?", "");
 
 personalMovieDB.movies[oneAsk] = twoAsk;
+personalMovieDB.movies[threeAsk] = foureAsk;
 
 console.log(personalMovieDB);
