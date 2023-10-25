@@ -65,3 +65,28 @@ function writeYoreGenres() {
 }
 
 writeYoreGenres();
+
+
+const baseCurrencies = ['USD', 'EUR'];
+const additionalCurrencies = ['UAH', 'RUB', 'CNY'];
+const arr = []
+
+function availableCurr(arr, missingCurr) {
+    let str = "";
+    if (arr.length === 0) {
+        return "Нет доступных валют"
+    }
+    arr.forEach(function (i) {
+        if (i !== missingCurr) {
+            str += "\n" + i;
+        }
+        if (arr[indexOf(i) === arr.length - 1]){
+            srt += "\n"
+        }
+    })
+    return `Доступные валюты: ${str}`;
+}
+
+console.log(availableCurr(baseCurrencies, "USD"));
+console.log(availableCurr(additionalCurrencies, "RUB"));
+console.log(availableCurr(arr));
